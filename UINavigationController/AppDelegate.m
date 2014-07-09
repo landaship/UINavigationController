@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    FirstViewController *firstVC = [[FirstViewController alloc]init];
+    
+    // NavigationController 必须指定根控制器firstVC
+    UINavigationController *firstNC =
+        [[UINavigationController alloc]initWithRootViewController:firstVC];
+    
+    self.window.rootViewController = firstNC;
+
     [self.window makeKeyAndVisible];
     return YES;
 }

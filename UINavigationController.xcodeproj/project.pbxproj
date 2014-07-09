@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF8F6DE1196D6D540039A83B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8F6DE0196D6D540039A83B /* FirstViewController.m */; };
 		BFC3D761196D167400B94270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3D760196D167400B94270 /* Foundation.framework */; };
 		BFC3D763196D167400B94270 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3D762196D167400B94270 /* CoreGraphics.framework */; };
 		BFC3D765196D167400B94270 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3D764196D167400B94270 /* UIKit.framework */; };
@@ -19,6 +20,9 @@
 		BFC3D77C196D167500B94270 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3D764196D167400B94270 /* UIKit.framework */; };
 		BFC3D784196D167500B94270 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFC3D782196D167500B94270 /* InfoPlist.strings */; };
 		BFC3D786196D167500B94270 /* UINavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3D785196D167500B94270 /* UINavigationControllerTests.m */; };
+		BFD892D3196D765000F6EC4D /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD892D2196D765000F6EC4D /* ThirdViewController.m */; };
+		BFD892D6196D765D00F6EC4D /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD892D5196D765D00F6EC4D /* FourViewController.m */; };
+		BFD892D9196D76B900F6EC4D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD892D8196D76B900F6EC4D /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF8F6DDF196D6D540039A83B /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BF8F6DE0196D6D540039A83B /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		BFC3D75D196D167400B94270 /* UINavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UINavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC3D760196D167400B94270 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFC3D762196D167400B94270 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,12 @@
 		BFC3D781196D167500B94270 /* UINavigationControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UINavigationControllerTests-Info.plist"; sourceTree = "<group>"; };
 		BFC3D783196D167500B94270 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BFC3D785196D167500B94270 /* UINavigationControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationControllerTests.m; sourceTree = "<group>"; };
+		BFD892D1196D765000F6EC4D /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		BFD892D2196D765000F6EC4D /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		BFD892D4196D765D00F6EC4D /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		BFD892D5196D765D00F6EC4D /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		BFD892D7196D76B900F6EC4D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BFD892D8196D76B900F6EC4D /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,12 @@
 		BFC3D754196D167400B94270 = {
 			isa = PBXGroup;
 			children = (
+				BFD892D7196D76B900F6EC4D /* SecondViewController.h */,
+				BFD892D8196D76B900F6EC4D /* SecondViewController.m */,
+				BFD892D1196D765000F6EC4D /* ThirdViewController.h */,
+				BFD892D2196D765000F6EC4D /* ThirdViewController.m */,
+				BFD892D4196D765D00F6EC4D /* FourViewController.h */,
+				BFD892D5196D765D00F6EC4D /* FourViewController.m */,
 				BFC3D766196D167400B94270 /* UINavigationController */,
 				BFC3D77F196D167500B94270 /* UINavigationControllerTests */,
 				BFC3D75F196D167400B94270 /* Frameworks */,
@@ -109,6 +127,8 @@
 			children = (
 				BFC3D76F196D167400B94270 /* AppDelegate.h */,
 				BFC3D770196D167400B94270 /* AppDelegate.m */,
+				BF8F6DDF196D6D540039A83B /* FirstViewController.h */,
+				BF8F6DE0196D6D540039A83B /* FirstViewController.m */,
 				BFC3D772196D167400B94270 /* Images.xcassets */,
 				BFC3D767196D167400B94270 /* Supporting Files */,
 			);
@@ -239,7 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD892D9196D76B900F6EC4D /* SecondViewController.m in Sources */,
+				BFD892D6196D765D00F6EC4D /* FourViewController.m in Sources */,
 				BFC3D771196D167400B94270 /* AppDelegate.m in Sources */,
+				BFD892D3196D765000F6EC4D /* ThirdViewController.m in Sources */,
+				BF8F6DE1196D6D540039A83B /* FirstViewController.m in Sources */,
 				BFC3D76D196D167400B94270 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +461,7 @@
 				BFC3D78B196D167500B94270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFC3D78C196D167500B94270 /* Build configuration list for PBXNativeTarget "UINavigationControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +470,7 @@
 				BFC3D78E196D167500B94270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
