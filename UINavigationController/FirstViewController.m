@@ -27,13 +27,50 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"首页";
     
+    // 设置进入下一界面的按钮
     self.view.backgroundColor = [UIColor greenColor];
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
     btn.frame = CGRectMake(100, 100, 100, 100);
     [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    // 这里的self 的navigationController和delegate里的是同一个bar
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_background.png"] forBarMetrics:UIBarMetricsDefault];
+    //    NSLog(@"navigationController:%@", self.navigationController);
+    // 设置不透明
+    self.navigationController.navigationBar.translucent = NO;
+
+    UIButton *myButton = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    // 设置单独的左边的按钮
+    //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:myButton];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(bookMark)];
+  
+    // 设置左边的按钮组
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc]initWithCustomView:myButton];
+    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:  buttonItem,item, nil];
+    
+    // 设置右边的按钮
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"123" style:UIBarButtonItemStyleBordered target:self action:@selector(bookMark)];
+    
+    //    navigationItem组成了bar
+    // 设置NavigationBar
+    // 为什么这个navigationItem就刚好是中间那个呢，不是左边也不是右边？
+    self.title = @"首页";
+    NSLog(@"navigationTitile 是:%@", self.navigationItem.title);
+    self.navigationItem.title = @"会冲突";
+
+    UILabel *lable = [[UILabel alloc]init];
+    lable.text = @"我是Lable";
+    lable.frame = CGRectMake(0, 0, 80, 44);
+    self.navigationItem.titleView = lable;
+    
+    
+}
+
+- (void) bookMark
+{
+    NSLog(@"bookMark");
 }
 
 - (void) click

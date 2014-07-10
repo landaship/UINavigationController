@@ -23,8 +23,9 @@
     UINavigationController *firstNC =
         [[UINavigationController alloc]initWithRootViewController:firstVC];
     
+    firstNC.navigationBar.translucent = NO;
+    
     self.window.rootViewController = firstNC;
-
     [self.window makeKeyAndVisible];
     return YES;
 }
